@@ -37,16 +37,17 @@ public class JavaApplication1 {
         }
         System.out.print("Digite um numero para ser procurado: ");
         int num = scanner.nextInt();
-        String response = ""; 
+        String response =  "O número não existe na matriz"; 
         for (int i = 0; i < linhas; i++){
             for(int j = 0 ; j <  colunas ; j++){
             int num2 = matrix[i][j] ; 
-            if(num == num2){
-                
+            if(num ==  num2){
                 response = "O numero existe na matriz"; 
+                
             }
             else{
-                response  = "O numero nao existe na matriz"; 
+               
+                
             }
             
                   
@@ -58,7 +59,9 @@ public class JavaApplication1 {
             
         
         }
-        System.out.print(response); 
+                     System.out.println(response); 
+ 
+       
         
 
     }
